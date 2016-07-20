@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+ 
+  <title>PNR STATUS</title>
+ 
+</head>
+<body>
+  <section class="container" align="center">
+    <div class="login">
+      <h1>PNR STATUS</h1>
+
+      <form method="post" action="/polls/your_pnrno">
+	  {% csrf_token %}
+        <p><input id="pnrno" type="text" name="pnrno" value="{{ current_name }}" placeholder="YOUR PNR NUMBER" maxlength="10"></p>
+        <p class="submit"><input type="submit" name="commit" value="CHECK"></p>
+      </form>
+    </div>
+
+    
+  </section>
+
+  
+</body>
+</html>
